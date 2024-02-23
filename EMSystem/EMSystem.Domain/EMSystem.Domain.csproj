@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\" />
+    <None Remove="Ports\" />
+    <None Remove="Ports\Incoming\" />
+    <None Remove="Ports\Outgoing\" />
+    <None Remove="Ports\Incoming\Commands\" />
+    <None Remove="Ports\Incoming\Queries\" />
+    <None Remove="Ports\Incoming\Commands\Handlers\" />
+    <None Remove="Ports\Incoming\Commands\Requests\" />
+    <None Remove="Ports\Incoming\Commands\Responses\" />
+    <None Remove="Ports\Incoming\Queries\Responses\" />
+    <None Remove="Ports\Outgoing\Abtractions\" />
+    <None Remove="Ports\Incoming\Queries\Handlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Ports\" />
+    <Folder Include="Ports\Incoming\" />
+    <Folder Include="Ports\Outgoing\" />
+    <Folder Include="Ports\Incoming\Commands\" />
+    <Folder Include="Ports\Incoming\Queries\" />
+    <Folder Include="Ports\Incoming\Commands\Handlers\" />
+    <Folder Include="Ports\Incoming\Commands\Requests\" />
+    <Folder Include="Ports\Incoming\Commands\Responses\" />
+    <Folder Include="Ports\Incoming\Queries\Responses\" />
+    <Folder Include="Ports\Outgoing\Abtractions\" />
+    <Folder Include="Ports\Incoming\Queries\Handlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+</Project>
